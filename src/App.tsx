@@ -1,10 +1,12 @@
 import './App.scss'
 import {Routes, Route} from 'react-router-dom'
+import SearchCityPage from './pages/searchCityPage/SearchCityPage'
 
 function App() {
+
   return (
     <Routes>
-      <Route path='/' element={<h1>Hello World</h1>}/>
+      <Route path='/' element={<SearchCityPage />}/>
     </Routes>
   )
 }

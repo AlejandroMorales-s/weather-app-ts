@@ -1,0 +1,14 @@
+.logo-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  .logo-icon{
+    fill: $primary;
+    stroke-width: 4rem;
+    stroke: $primary;
+    font-size: 3.5rem;
+  }
+  .logo-text{
+    color: $primary
+  }
+}

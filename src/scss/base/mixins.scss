@@ -1,0 +1,70 @@
+@mixin mobile {
+    @media (min-width: $mobile) and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) and (max-width: $laptop){
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: $laptop) and (max-width: $desktop){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin primary-btn($color: $primary) {
+    color: $white;
+    font-weight: $semiBold;
+    font-size: 1.4rem;
+    padding: 2rem;
+    background-color: $color;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+      color: $white; 
+      font-weight: $medium;
+    }
+}
+
+@mixin secondary-btn {
+    border: 2px solid $primary;
+    color: $primary;
+    font-weight: $semiBold;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    max-width: fit-content;
+}
+
+@mixin transition($value) {
+    transition: $value 0.2s ease-in-out;
+    -webkit-transition: $value 0.2s ease-in-out;
+    -moz-transition: $value 0.2s ease-in-out;
+    -ms-transition: $value 0.2s ease-in-out;
+    -o-transition: $value 0.2s ease-in-out;
+}
+
+@mixin box-shadow($r: 0, $g: 0, $b: 0) {
+    box-shadow: 0px 0px 20px 3px rgba($r, $g, $b, 0.3);
+    -webkit-box-shadow: 0px 0px 20px 3px rgba($r, $g, $b, 0.3);
+    -moz-box-shadow: 0px 0px 20px 3px rgba($r, $g, $b, 0.3);
+}

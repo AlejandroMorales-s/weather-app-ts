@@ -15,7 +15,7 @@ export const filterCitiesByName = createAsyncThunk(
     const apiKey: string = import.meta.env.VITE_API_KEY;
 
     const response = await fetch(
-      `http://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${userInput}&lang=es`
+      `https://api.weatherapi.com/v1/search.json?key=${apiKey}&q=${userInput}&lang=es`
     );
 
     const data: CitiesFromDataFetched[] = await response.json();

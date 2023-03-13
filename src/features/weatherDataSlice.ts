@@ -19,7 +19,7 @@ export const fetchWeatherData = createAsyncThunk(
       const apiKey: string = import.meta.env.VITE_API_KEY;
 
       const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=yes`
+        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${query}&aqi=yes`
       );
 
       const data: DataFetched = await response.json();

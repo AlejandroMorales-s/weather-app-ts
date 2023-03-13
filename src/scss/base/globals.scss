@@ -7,11 +7,12 @@ html{
     margin: 0;
     padding: 0;
     font-family: $font;
-    color: $text;
+    color: $darkGray;
 }
 body{
     position: relative;
-    height: fit-content;
+    min-height: 100vh;
+    background-color: $background;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -32,6 +33,7 @@ p, button{
     font-size: 1.4rem;
     line-height: 2.25rem;
     border: none;
+    color: $darkGray;
 }
 a, li{
     text-decoration: none;
@@ -40,7 +42,20 @@ a, li{
 label{
     font-size: 1.6rem;
     font-weight: $medium;
-    color: $black;
+}
+input{
+    color: $lightGray;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    background-color: $inputBackground;
+    border: 2px solid transparent;
+    @include transition(all);
+    &:focus{
+        @include box-shadow($primary);
+        outline: none;
+        border: 2.5px solid $primary;
+    }
 }
 ul{
     list-style: none;

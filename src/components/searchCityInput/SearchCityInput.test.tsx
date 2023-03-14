@@ -2,12 +2,15 @@ import SearchCityInput from "./SearchCityInput";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { store } from "../../app/store";
+import { BrowserRouter } from "react-router-dom";
 
 describe("Search city input", () => {
   test("should render", () => {
     render(
       <Provider store={store}>
-        <SearchCityInput />
+        <BrowserRouter>
+          <SearchCityInput />
+        </BrowserRouter>
       </Provider>
     );
   });
@@ -15,7 +18,9 @@ describe("Search city input", () => {
   test("should render input", () => {
     render(
       <Provider store={store}>
-        <SearchCityInput />
+        <BrowserRouter>
+          <SearchCityInput />
+        </BrowserRouter>
       </Provider>
     );
 
@@ -25,7 +30,9 @@ describe("Search city input", () => {
   test("should the dropdown be hidden at the start", () => {
     render(
       <Provider store={store}>
-        <SearchCityInput />
+        <BrowserRouter>
+          <SearchCityInput />
+        </BrowserRouter>
       </Provider>
     );
 
@@ -35,7 +42,9 @@ describe("Search city input", () => {
   test("should show the words that the user is typing in the input", () => {
     render(
       <Provider store={store}>
-        <SearchCityInput />
+        <BrowserRouter>
+          <SearchCityInput />
+        </BrowserRouter>
       </Provider>
     );
 
@@ -51,7 +60,9 @@ describe("Search city input", () => {
   test("should show the dropdown when the user is typing in the input", () => {
     render(
       <Provider store={store}>
-        <SearchCityInput />
+        <BrowserRouter>
+          <SearchCityInput />
+        </BrowserRouter>
       </Provider>
     );
 
@@ -67,7 +78,9 @@ describe("Search city input", () => {
   test("should hide the dropdown when the user delete his input", () => {
     render(
       <Provider store={store}>
-        <SearchCityInput />
+        <BrowserRouter>
+          <SearchCityInput />
+        </BrowserRouter>
       </Provider>
     );
 

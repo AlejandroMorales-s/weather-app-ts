@@ -1,0 +1,194 @@
+[
+	{
+		"code" : 1000,
+		"iconReference" : "./../../../weatherIllustrations/Sun.png"
+	},
+	{
+		"code" : 1003,
+		"iconReference" : "./../../../weatherIllustrations/sunClouds-1.png"
+	},
+	{
+		"code" : 1006,
+		"iconReference" : "./../../../weatherIllustrations/sunClouds.png"
+	},
+	{
+		"code" : 1009,
+		"iconReference" : "./../../../weatherIllustrations/Cloud.png"
+	},
+	{
+		"code" : 1030,
+		"iconReference" : "./../../../weatherIllustrations/Wave.png"
+	},
+	{
+		"code" : 1063,
+		"iconReference" : "./../../../weatherIllustrations/rain.png"
+	},
+	{
+		"code" : 1066,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1069,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1072,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1087,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1114,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1117,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1135,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1147,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1150,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1153,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1168,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1171,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1180,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1183,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1186,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1189,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1192,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1195,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1198,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1201,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1204,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1207,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1210,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1213,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1216,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1219,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1222,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1225,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1237,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1240,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1243,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1246,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1249,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1252,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1255,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1258,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1261,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1264,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1273,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1276,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1279,
+		"iconReference" : ""
+	},
+	{
+		"code" : 1282,
+		"iconReference" : ""
+	}
+]

@@ -2,13 +2,15 @@ import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 
 //* Reducers
-import weatherDataReducer from "../features/weatherDataSlice";
-import searchCityByNameReducer from "../features/searchCityByName";
+import weatherData from "../features/weatherDataSlice";
+import searchCityByName from "../features/searchCityByName";
+import citiesSaved from "../features/citiesSaved";
 
 export const store = configureStore({
   reducer: {
-    weatherData: weatherDataReducer,
-    searchCityByName: searchCityByNameReducer,
+    weatherData,
+    searchCityByName,
+    citiesSaved,
   },
 });
 

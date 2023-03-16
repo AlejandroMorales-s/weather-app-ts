@@ -1,0 +1,15 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .navbar-menu-icon{
+    font-size: 3.5rem;
+  }
+  .navbar-image-container{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 4rem;
+    width: 4rem;
+    background-color: $white;
+  }
+}

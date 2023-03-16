@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../../app/store";
 import {
   filterCitiesByName,
@@ -7,17 +8,25 @@ import {
 } from "../../features/searchCityByName";
 
 export default function SearchCityInput() {
+  //* State
   const [inputValue, setInputValue] = useState<string>("");
 
+  //* Dispatch
   const dispatch = useAppDispatch();
 
+  //* Navigate
+  const navigate = useNavigate();
+
+  //* Selectors
   const selectCitiesNames = useSelector(selectCitiesFiltered);
 
+  //* Search city
   const searchCity = (input: string) => {
     setInputValue(input);
     if (!input) return;
     dispatch(filterCitiesByName(input));
   };
+
   return (
     <div className="search-city-input-container">
       <form className="search-city-input-form">
@@ -41,6 +50,7 @@ export default function SearchCityInput() {
                 key={index}
                 className="search-city-input-dropdown-items"
                 role="tab"
+                onClick={() => navigate(`/weather/${city}`)}
               >
                 {city}
               </p>

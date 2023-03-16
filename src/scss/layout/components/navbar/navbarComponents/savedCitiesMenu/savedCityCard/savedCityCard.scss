@@ -1,0 +1,31 @@
+.saved-city-card{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: $primary;
+  .saved-city-card-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+    .saved-city-card-name-container{
+      align-items: center;
+      gap: 0.5rem;
+      .saved-city-card-icon{
+        font-size: 2rem;
+      }
+    }
+    .saved-city-card-ica{
+      padding: 0.5rem;
+      background-color: $text;
+      width: fit-content;
+      border-radius: 1rem;
+    }
+  }
+  .saved-city-card-temp{
+    font-size: 3.5rem;
+  }
+}

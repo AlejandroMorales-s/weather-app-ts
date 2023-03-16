@@ -13,7 +13,9 @@
 //* Search city input
 @import './scss/layout/searchCityInput.scss';
 //* Navbar
-@import './scss/layout/navbar.scss';
+@import './scss/layout/components/navbar/navbar.scss';
+@import './scss/layout/components/navbar/navbarComponents/savedCitiesMenu/SavedCities.scss';
+@import './scss/layout/components/navbar/navbarComponents/savedCitiesMenu/savedCityCard/savedCityCard.scss';
 
 //* Pages
 //* ==================================================

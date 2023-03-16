@@ -21,7 +21,8 @@ body{
     h#{$i}{
         font-size: nth($fontSize, $i);
         margin: 0;
-        color: $black;
+        color: $white;
+        font-weight: $regular;
     }
 }
 img{

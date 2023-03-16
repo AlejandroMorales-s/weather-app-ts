@@ -1,0 +1,44 @@
+.saved-cities{
+  position: fixed;
+  background-color: $background;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 100;
+  top: 0;
+  animation: menuIn 0.3s ease-in-out forwards;
+  .saved-cities-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .saved-cities-return-button{
+      font-size: 3rem;
+    }
+    .saved-cities-container{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+.closeSavedCities{
+  animation: menuOut 0.3s ease-in-out forwards;
+}
+
+@keyframes menuIn {
+  from{
+    left: -100vh;
+  }
+  to{
+    left: 0;
+  }
+}
+
+@keyframes menuOut {
+  from{
+    left: 0;
+  }
+  to{
+    left: -100vh;
+  }
+}

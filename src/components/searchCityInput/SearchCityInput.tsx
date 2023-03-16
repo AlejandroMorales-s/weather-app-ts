@@ -50,7 +50,10 @@ export default function SearchCityInput() {
                 key={index}
                 className="search-city-input-dropdown-items"
                 role="tab"
-                onClick={() => navigate(`/weather/${city}`)}
+                onClick={() => {
+                  setInputValue("");
+                  navigate(`/weather/${city}`);
+                }}
               >
                 {city}
               </p>

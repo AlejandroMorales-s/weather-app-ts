@@ -3,8 +3,8 @@ import {
   FacebookAuthProvider,
   signInWithPopup,
   fetchSignInMethodsForEmail,
-} from 'firebase/auth';
-import { auth } from './firebase';
+} from "firebase/auth";
+import { auth } from "./firebase";
 
 const supportedSignInMethods = [
   GoogleAuthProvider.PROVIDER_ID,
@@ -18,7 +18,7 @@ const getProvider = (id: string) => {
     case FacebookAuthProvider.PROVIDER_ID:
       return new FacebookAuthProvider();
     default:
-      throw new Error('Not provider accepted');
+      throw new Error("Not provider accepted");
   }
 };
 
@@ -31,12 +31,11 @@ export const providerLogin = async (id: string) => {
   try {
     return await signInWithPopup(auth, getProvider(id));
   } catch (error: any) {
-
     const email = error.customData?.email;
 
     if (
       email &&
-      error.code === 'auth/account-exists-with-different-credential'
+      error.code === "auth/account-exists-with-different-credential"
     ) {
       const providers = await fetchSignInMethodsForEmail(auth, email);
 
@@ -46,7 +45,7 @@ export const providerLogin = async (id: string) => {
       });
 
       if (!method)
-        throw new Error('Your account is linked with an unsupported provider');
+        throw new Error("Your account is linked with an unsupported provider");
 
       const linkedProvider = getProvider(method);
 

@@ -24,34 +24,25 @@
 @mixin primary-btn($color: $primary) {
     color: $white;
     font-weight: $semiBold;
-    font-size: 1.4rem;
-    padding: 2rem;
+    font-size: 1.6rem;
+    padding: 1.75rem;
     background-color: $color;
-    border-radius: 3rem;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    -ms-border-radius: 3rem;
-    -o-border-radius: 3rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    p{
-      color: $white; 
-      font-weight: $medium;
-    }
+    color: $white; 
+    font-weight: $medium;
 }
 
 @mixin secondary-btn {
     border: 2px solid $primary;
     color: $primary;
+    font-size: 1.6rem;
     font-weight: $semiBold;
-    padding: 2rem;
+    padding: 1.75rem;
     background-color: transparent;
-    border-radius: 3rem;
-    -webkit-border-radius: 3rem;
-    -moz-border-radius: 3rem;
-    -ms-border-radius: 3rem;
-    -o-border-radius: 3rem;
+    border-radius: 1rem;
     max-width: fit-content;
 }
 

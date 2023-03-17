@@ -1,0 +1,75 @@
+.navbar-profile-menu-container{
+  .navbar-image-container{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 4rem;
+    width: 4rem;
+    background-color: $white;
+  }
+  .navbar-profile-menu-container{
+    position: fixed;
+    top: 0;
+    background-color: $background;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    .navbar-profile-menu{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .navbar-profile-menu-icon{
+        font-size: 3rem;
+      }
+      .navbar-profile-menu-main{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .navbar-profile-menu-main-buttons-container{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center;
+          .navbar-profile-menu-main-button{
+            color: $primary;
+            background-color: transparent;
+            padding: 2rem 0;
+            width: 85%;
+            @include transition(all);
+          }
+          .active-button{
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: $semiBold;
+            background-color: $formBg;
+            border-radius: 1rem 1rem 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-opened{
+  animation: profileMenuIn 0.3s ease-in-out forwards;
+}
+
+.menu-closed{
+  animation: profileMenuOut 0.3s ease-in-out forwards;
+}
+
+@keyframes profileMenuIn {
+  from{
+    right: -100vh;
+  }
+  to{
+    right: 0;
+  }
+}
+
+@keyframes profileMenuOut {
+  from{
+    right: 0;
+  }
+  to{
+    right: -100vh;
+  }
+}

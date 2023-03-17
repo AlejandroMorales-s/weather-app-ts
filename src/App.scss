@@ -16,6 +16,12 @@
 @import './scss/layout/components/navbar/navbar.scss';
 @import './scss/layout/components/navbar/navbarComponents/savedCitiesMenu/SavedCities.scss';
 @import './scss/layout/components/navbar/navbarComponents/savedCitiesMenu/savedCityCard/savedCityCard.scss';
+@import './scss/layout/components/navbar/navbarComponents/profileMenu/profileMenu.scss';
+@import './scss/layout/components/navbar/navbarComponents/profileMenu/profileMenuComponents/formBase/formBase.scss';
+//* Loader
+@import './scss/layout/components/loader.scss';
+//* Social media
+@import './scss/layout/components/navbar/navbarComponents/profileMenu/profileMenuComponents/socialMedia.scss';
 
 //* Pages
 //* ==================================================

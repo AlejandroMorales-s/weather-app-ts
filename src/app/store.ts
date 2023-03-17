@@ -5,12 +5,14 @@ import { useDispatch } from "react-redux";
 import weatherData from "../features/weatherDataSlice";
 import searchCityByName from "../features/searchCityByName";
 import citiesSaved from "../features/citiesSaved";
+import user from "../features/userAuth";
 
 export const store = configureStore({
   reducer: {
     weatherData,
     searchCityByName,
     citiesSaved,
+    user,
   },
 });
 

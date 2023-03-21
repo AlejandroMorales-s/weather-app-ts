@@ -1,0 +1,13 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  position: relative;
+  .password-icon {
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    font-size: 3rem;
+  }
+}

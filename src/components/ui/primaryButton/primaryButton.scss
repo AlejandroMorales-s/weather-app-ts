@@ -1,0 +1,7 @@
+.primary-button {
+  @include primary-btn();
+  @include transition(all);
+  .primary-button-disabled {
+    opacity: 0.5;
+  }
+}

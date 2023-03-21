@@ -1,29 +1,47 @@
 //* Base
 //* ==================================================
-@import './scss/base/variables.scss';
-@import './scss/base/normalize.scss';
-@import './scss/base/mixins.scss';
-@import './scss/base/utilities.scss';
-@import './scss/base/globals.scss';
+@import "./scss/base/variables.scss";
+@import "./scss/base/normalize.scss";
+@import "./scss/base/mixins.scss";
+@import "./scss/base/utilities.scss";
+@import "./scss/base/globals.scss";
+
+//* UI
+//* ==================================================
+//* Logo
+@import "./components/ui/logo/logo.scss";
+
+//* Search city input
+@import "./components/ui/searchCityInput/searchCityInput.scss";
+
+//* Navbar
+@import "./components/ui/navbar/navbar.scss";
+
+//* Saved city card
+@import "./components/ui/savedCityCard/savedCityCard.scss";
+
+//* Form
+@import "./components/ui/form/Form.scss";
+
+//* Loader
+@import "./components/ui/loader/loader.scss";
+
+//* Primary button
+@import "./components/ui/primaryButton/primaryButton.scss";
+
+//* Input
+@import "./components/ui/input/input.scss";
+
+//* Social media
+@import "./components/ui/socialMedia/socialMedia.scss";
 
 //* Layout
 //* ==================================================
-//* Logo
-@import './scss/layout/logo.scss';
-//* Search city input
-@import './scss/layout/searchCityInput.scss';
-//* Navbar
-@import './scss/layout/components/navbar/navbar.scss';
-@import './scss/layout/components/navbar/navbarComponents/savedCitiesMenu/SavedCities.scss';
-@import './scss/layout/components/navbar/navbarComponents/savedCitiesMenu/savedCityCard/savedCityCard.scss';
-@import './scss/layout/components/navbar/navbarComponents/profileMenu/profileMenu.scss';
-@import './scss/layout/components/navbar/navbarComponents/profileMenu/profileMenuComponents/formBase/formBase.scss';
-//* Loader
-@import './scss/layout/components/loader.scss';
-//* Social media
-@import './scss/layout/components/navbar/navbarComponents/profileMenu/profileMenuComponents/socialMedia.scss';
+//* Profile menu
+@import "./components/layout/profileMenu/profileMenu.scss";
 
-//* Pages
-//* ==================================================
+//* Saved cities
+@import "./components/layout/savedCities/SavedCities.scss";
+
 //* Search city page
-@import './scss/layout/pages/searchCityPage.scss';
+@import "./components/layout/searchCityPage/searchCityPage.scss";
